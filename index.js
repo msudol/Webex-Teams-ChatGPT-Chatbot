@@ -4,8 +4,12 @@ const axios = require('axios')
 const app = express()
 app.use(bodyParser.json())
 
+# Webex Teams 
 const botId = 'your_bot_id'
 const accessToken = 'your_access_token'
+
+# Chat GPT
+const apiKey = 'your_api_key'
 
 app.post('/', (req, res) => {
   const { data } = req.body
@@ -20,7 +24,7 @@ app.post('/', (req, res) => {
       }, {
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${accessToken}`
+          'Authorization': `Bearer ${apiKey}`
         }
       }).then(response => {
         const { data } = response
