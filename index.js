@@ -10,6 +10,7 @@ const accessToken = 'your_access_token'
 
 # Chat GPT
 const apiKey = 'your_api_key'
+const org_id = 'your_org_id'
 
 app.post('/', (req, res) => {
   const { data } = req.body
@@ -24,7 +25,8 @@ app.post('/', (req, res) => {
       }, {
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${apiKey}`
+          'Authorization': `Bearer ${apiKey}`,
+          'OpenAI-Organization': org_id
         }
       }).then(response => {
         const choice = response.data.choice;
