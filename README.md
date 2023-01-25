@@ -7,3 +7,10 @@ You'll need to replace your_bot_id with your Webex Teams bot's ID and your_acces
 
 This is just a skeleton to start with, you can modify it as per your requirement.
 
+## Human Developer Comments
+This is an exercise to build an app from scratch with ChatGPT.  I am including the transcript of my chat to show how the code was arrived at, from initial request to revisions that require the knowledge and keen eye of an experienced developer. 
+
+My first finding was just some omissions, which ChatGPT was able to correct. The next finding was application specific, but the base code created, failed to use the webex teams bot framework, which is generally considered essential. This code may run without it, but it will require additional considerations. Finally, the ChatGPT code did not implement security best practices as it placed API keys in plain text variables hardcoded in index.js. 
+
+In each scenario I was able to ask ChatGPT to correct it's mistakes and it did, while also being very apologetic for screwing up.
+
