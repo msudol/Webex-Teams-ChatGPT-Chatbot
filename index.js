@@ -27,11 +27,10 @@ app.post('/', (req, res) => {
           'Authorization': `Bearer ${apiKey}`
         }
       }).then(response => {
-        const { data } = response
-        const reply = data.choices[0].text
+        const choice = response.data.choice;
         axios.post(`https://api.ciscospark.com/v1/messages`, {
           roomId: message.roomId,
-          text: reply
+          text: choice
         }, {
           headers: {
             'Content-Type': 'application/json',
