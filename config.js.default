@@ -1,4 +1,5 @@
 module.exports = {
+  webexTeamsBotId: 'your_webex_teams_bot_id',
   webexTeamsAccessToken: 'your_webex_teams_access_token',
   openAiApiKey: 'your_openai_api_key',
   openAiOrganization: 'your_organization_id'
