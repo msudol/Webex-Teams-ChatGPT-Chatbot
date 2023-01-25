@@ -1,3 +1,4 @@
+const config = require('./config')
 const express = require('express')
 const bodyParser = require('body-parser')
 const axios = require('axios')
@@ -5,12 +6,12 @@ const app = express()
 app.use(bodyParser.json())
 
 # Webex Teams 
-const botId = 'your_bot_id'
-const accessToken = 'your_access_token'
+const botId = config.webexTeamsBotId
+const accessToken = config.webexTeamsAccessToken
 
 # Chat GPT
-const apiKey = 'your_api_key'
-const org_id = 'your_org_id'
+const apiKey = config.openAiApiKey
+const org_id = config.openAiOrganization
 
 app.post('/', (req, res) => {
   const { data } = req.body
