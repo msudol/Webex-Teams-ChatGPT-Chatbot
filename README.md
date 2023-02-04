@@ -14,5 +14,5 @@ My first finding was just some omissions, which ChatGPT was able to correct. The
 
 In each scenario I was able to ask ChatGPT to correct it's mistakes and it did, while also being very apologetic for screwing up.
 
-The lesson is, while ChatGPT is capable of writing code, building templates, and getting you "off the ground" so to speak, it still requires a keen eye and good software development skills as well as code review and testing to make functional applicatins. ChatGPT isn't going to write your killer app out of the box.
+The lesson is, while ChatGPT is capable of writing code, building templates, and getting you "off the ground" so to speak, it still requires a keen eye and good software development skills as well as code review and testing to make functional applicatins. ChatGPT isn't going to write your killer app out of the box. Be sure to read the full transcript PDF.
 
